@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Concept House Bd</title>
+</head>
+
+<body>
+
+    <section id="banner">
+        <img src="/images/logo.png" class="logo" alt="">
+        <div class="banner-text">
+            <h1>Concept House Bd</h1>
+            <p>Your Trusted Sportsware Partner</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Shop now</a>
+                <a href="#"><span></span>Contact Us</a>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="#">Features </a></li>
+                <li><a href="#">Services </a></li>
+                <li><a href="#">Testimonials </a></li>
+                <li><a href="#">Meet US </a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="/images/menu.png" alt="" id="menu">
+    </div>
+
+    <!--Featuere-->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+
+
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield" aria-hidden="true"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod consectetur beatae dolorum
+                            temporibus delectus, recusandae eos sequi, in accusantium ratione alias eum minima facilis
+                            dolore non aliquam animi aperiam assumenda! Quasi necessitatibus expedita iste? Quidem dicta
+                            maiores quae totam ratione.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="features-img">
+                <img src="/images/barber-man.jpg" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-220px"
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-220px") {
+                sideNav.style.right = "0";
+                menu.src = "/images/close.png";
+
+            }
+            else {
+                sideNav.style.right = "-220px";
+                menu.src = "/images/menu.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
